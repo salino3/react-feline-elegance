@@ -3,9 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #f27405;
-  --color-dark: #1a1a1a;
   --radius-base: 1rem;
+
+  --surface: "#faf9f7";
+  --surface-dim: "#dadad8";
+  --surface-bright: "#faf9f7";
+  --surface-container-lowest: "#ffffff";
+  --surface-container-low: "#f4f3f1";
+  --surface-container: "#efeeec";
+  --surface-container-high: "#e9e8e6";
+  --surface-container-highest: "#e3e2e0";
+  --on-surface: "#1a1c1b";
+  --on-surface-variant: "#4f4442";
+  --inverse-surface: "#2f3130";
+  --inverse-on-surface: "#f1f1ef";
+  --outline: "#817471";
+  --outline-variant: "#d3c3bf";
+  --surface-tint: "#705953";
+  --primary: "#705953";
+  --on-primary: "#ffffff";
+  --primary-container: "#f7d8d0";
+  --on-primary-container: "#745d57";
+  --inverse-primary: "#dec0b8";
+  --secondary: "#446733";
+  --on-secondary: "#ffffff";
+  --secondary-container: "#c5efad";
+  --on-secondary-container: "#4a6e39";
+  --tertiary: "#a73a00";
+  --on-tertiary: "#ffffff";
+  --tertiary-container: "#ffd6c8";
+  --on-tertiary-container: "#ae3c00";
+  --error: "#ba1a1a";
+  --on-error: "#ffffff";
+  --error-container: "#ffdad6";
+  --on-error-container: "#93000a";
+  --primary-fixed: "#fbdcd4";
+  --primary-fixed-dim: "#dec0b8";
+  --on-primary-fixed: "#281813";
+  --on-primary-fixed-variant: "#57423c";
+  --secondary-fixed: "#c5efad";
+  --secondary-fixed-dim: "#a9d293";
+  --on-secondary-fixed: "#062100";
+  --on-secondary-fixed-variant: "#2d4f1e";
+  --tertiary-fixed: "#ffdbce";
+  --tertiary-fixed-dim: "#ffb59a";
+  --on-tertiary-fixed: "#370e00";
+  --on-tertiary-fixed-variant: "#802a00";
+  --background: "#faf9f7";
+  --on-background: "#1a1c1b";
+  --surface-variant: "#e3e2e0";
 
   *,
   *::before,
