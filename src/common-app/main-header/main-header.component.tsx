@@ -1,20 +1,22 @@
 import React from "react";
 import clsx from "clsx";
-import { containerStyles, navStyles, ul } from "./styles";
+import { containerStyles, navStyles } from "./styles";
 
 export let colorx = "bg-rfe-primary-container";
 
 export const MainHeader: React.FC = () => {
-  const stylesNavValue = `flex flex-row items-center justify-center  
-                border-red-700 border-2 w-full`;
+  const stylesNavValue = `flex flex-row items-center justify-center w-full`;
+
+  const stylesUlValue = clsx(`flex flex-row items-center justify-between  
+    w-full`);
   return (
     <header data-component="MainHeader" className={containerStyles()}>
-      <div className="flex flex-row justify-between items-center gap-2 w-[500px] flex-none  border-slate-600 border-2">
+      <div className="flex flex-row justify-between items-center gap-2 w-[500px] flex-none ">
         <h3 className="flex items-center justify-center min-w-[160px] h-[32px] text-rfe-title-pink font-bold font-[liberation-serif] text-[22px]">
           Maison du Chat
         </h3>
         <nav className={navStyles(stylesNavValue)}>
-          <ul style={ul("blue")}>
+          <ul className={stylesUlValue}>
             <li>
               <a href="#">Shop</a>
             </li>

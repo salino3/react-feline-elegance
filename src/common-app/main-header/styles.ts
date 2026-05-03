@@ -11,7 +11,7 @@ export const containerStyles = () =>
 export const navStyles = (value: string) => clsx(`${value}   `);
 
 // Testing new styles with props in typescript with CSS autocomplite
-export const ul = (color: string): CSSProperties => ({
+export const tagEl = (color: string): CSSProperties => ({
   background: color,
   padding: "5rem",
   display: "flex",
