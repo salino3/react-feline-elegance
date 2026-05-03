@@ -4,8 +4,8 @@ import { colorx } from "./main-header.component";
 
 export const containerStyles = () =>
   clsx(`
-        flex flex-row items-center justify-center  
-        w-full  ${colorx} h-[85px]
+        flex flex-row items-center justify-between px-[32px] font-[cursive]
+       cou w-full  ${colorx} h-[85px]
         `);
 
 export const navStyles = (value: string) => clsx(`${value}   `);
