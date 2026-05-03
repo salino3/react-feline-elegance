@@ -51,6 +51,7 @@ export default {
         "rfe-background": "var(--background)",
         "rfe-on-background": "var(--on-background)",
         "rfe-surface-variant": "var(--surface-variant)",
+        "rfe-title-pink": "var(--title-pink)",
       },
       "borderRadius": {
         "rfe-radius-base": "var(--radius-base)",
