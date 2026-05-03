@@ -5,15 +5,20 @@ interface BoxTextProps {
   value: string;
 }
 
-const BoxText: React.FC<BoxTextProps> = (props) => {
-  const { title, value } = props;
+const BoxText: React.FC<BoxTextProps> = ({ title, value }) => {
+  const containerStyles = `
+    flex flex-row items-center justify-center gap-2 
+    bg-rfe-surface-dim p-2 min-w-[150px] 
+    rounded-rfe-radius-base text-center
+  `;
+
+  const labelStyles = "text-rfe-on-surface font-bold";
+  const valueStyles = "text-rfe-on-surface-variant";
+
   return (
-    <div
-      data-testid="box-container"
-      className="bg-rfe-surface-dim p-2 rounded-rfe-radius-base flex flex-row gap-2 items-center justify-center min-w-[150px] text-center"
-    >
-      <strong>{title}</strong>
-      <span>{value}</span>
+    <div data-component="BoxText" className={containerStyles}>
+      <strong className={labelStyles}>{title}</strong>
+      <span className={valueStyles}>{value}</span>
     </div>
   );
 };
