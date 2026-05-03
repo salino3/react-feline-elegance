@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { LayoutHome } from "./layout";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+      <LayoutHome />
       <h1 className="text-4xl font-bold text-blue-600 mb-8">
         Feline Elegance + React + Vite + Tailwind
       </h1>
@@ -18,6 +20,9 @@ function App() {
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
         >
           Increment
+        </button>
+        <button className="bg-zenith-orange text-slate-600 px-6 py-2 mt-4 hover:brightness-110">
+          Order Now
         </button>
       </div>
 
