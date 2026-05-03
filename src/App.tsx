@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen  bg-black flex flex-col items-center justify-center p-4">
       <LayoutHome />
       <h1 className="text-4xl font-bold text-blue-600 mb-8">
         Feline Elegance + React + Vite + Tailwind

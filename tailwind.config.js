@@ -53,7 +53,7 @@ export default {
         "rfe-surface-variant": "var(--surface-variant)",
       },
       "borderRadius": {
-        "rfe-base": "var(--radius-base)",
+        "rfe-radius-base": "var(--radius-base)",
       },
     },
   },
