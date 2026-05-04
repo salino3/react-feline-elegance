@@ -7,10 +7,11 @@
 :root {
   --radius-base: 1rem;
 
-  --surface: #faf9f7;
+  --light-btn: #c5ebaa --surface: #faf9f7;
   --surface-dim: #dadad8;
   --surface-bright: #faf9f7;
   --surface-container-lowest: #ffffff;
+  --surface-container-lowest-opacity: rgb(255, 255, 255, 0.15);
   --surface-container-low: #f4f3f1;
   --surface-container: #efeeec;
   --surface-container-high: #e9e8e6;

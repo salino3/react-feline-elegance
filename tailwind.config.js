@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        "rfe-light-btn": "var(--light-btn)",
         "rfe-surface": "var(--surface)",
         "rfe-surface-dim": "var(--surface-dim)",
         "rfe-surface-bright": "var(--surface-bright)",
         "rfe-surface-container-lowest": "var(--surface-container-lowest)",
+        "rfe-surface-container-lowest-opacity":
+          "var(--surface-container-lowest-opacity)",
         "rfe-surface-container-low": "var(--surface-container-low)",
         "rfe-surface-container": "var(--surface-container)",
         "rfe-surface-container-high": "var(--surface-container-high)",

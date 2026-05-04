@@ -1,4 +1,5 @@
 import React from "react";
+import { MainTab } from "../main-tab";
 
 export const MainImage: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ export const MainImage: React.FC = () => {
     >
       <img
         className="absolute z-[1]"
-        src="/public/images/Gradient.png"
+        src="/images/Gradient.png"
         alt="Gradient mMain image"
       />
       <img
@@ -16,6 +17,7 @@ export const MainImage: React.FC = () => {
         src="/images/main-image-feline.png"
         alt="Main image cat Maison du Chat"
       />
+      <MainTab />
     </div>
   );
 };
