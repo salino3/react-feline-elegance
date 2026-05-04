@@ -4,7 +4,7 @@ import { BoxText, MainHeader } from "../../common-app";
 
 export const LayoutHome: React.FC = () => {
   const containerStyles = clsx(`
-    flex flex-col items-center justify-start min-h-[100dvh] relative 
+    flex flex-col items-center justify-start min-h-[100dvh] relative  w-full
    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   bg-[#064E3B]  `);
 

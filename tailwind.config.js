@@ -56,6 +56,10 @@ export default {
       "borderRadius": {
         "rfe-radius-base": "var(--radius-base)",
       },
+      screens: {
+        "xs": "475px",
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [],
