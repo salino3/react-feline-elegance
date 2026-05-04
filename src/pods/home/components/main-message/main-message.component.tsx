@@ -6,7 +6,7 @@ export const MainMessage: React.FC = () => {
       data-component="MainMessage"
       className="absolute px-5   flex-1 w-full h-full flex flex-col   justify-center items-center  z-[2] "
     >
-      <div className="  flex-1 w-full h-full flex flex-col gap-1  justify-center items-center">
+      <div className="  flex-1 w-full h-full flex flex-col gap-2  justify-center items-center">
         <h3 className="font-[Noto-Serif] text-[16px] text-white">
           L'Art de Vivre Feline
         </h3>
