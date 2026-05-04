@@ -9,11 +9,13 @@ export const MainTab: React.FC = () => {
                  backdrop-blur-sm border border-white/20 shadow-2xl"
     >
       <div className="relative z-10 flex flex-col gap-6">
-        <h3>L'ÉDITION PRINTEMPS</h3>
-        <h1>
+        <h3 className="font-[Bold-Italic] text-[12px] text-rfe-primary ">
+          L'ÉDITION PRINTEMPS
+        </h3>
+        <h1 className="font-bold font-[Noto-Serif] text-[48px] ">
           Couture for the <br /> Modern Feline
         </h1>
-        <p>
+        <p className="font-[Italic] text-[18px]">
           Experience the pinnacle of cat fashion. Hand-stitched silken robes and
           velvet collars designed for the discerning companion.
         </p>
