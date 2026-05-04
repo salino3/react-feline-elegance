@@ -23,11 +23,11 @@ export const MainTab: React.FC = () => {
         </p>
 
         <div className="flex gap-4 mt-4">
-          <button className="bg-rfe-light-btn border border-rfe-on-secondary-fixed-variant text-rfe-on-secondary-fixed-variant px-8 py-4 rounded-full font-semibold hover:bg-[#b5dba0]  transition-colors">
+          <button className="cursor-pointer bg-rfe-light-btn border border-rfe-on-secondary-fixed-variant text-rfe-on-secondary-fixed-variant px-8 py-4 rounded-full font-semibold hover:bg-[#b5dba0]  transition-colors">
             Discover the Collection
           </button>
-          <button className="border border-rfe-surface-tint text-rfe-surface-tint px-8 py-4 rounded-full font-semibold hover:bg-white/60 transition-colors">
-            View Lookbook
+          <button className="cursor-pointer border border-rfe-surface-tint text-rfe-surface-tint px-8 py-4 rounded-full font-semibold hover:bg-white/60 transition-colors">
+            View Look ook
           </button>
         </div>
       </div>
