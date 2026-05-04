@@ -21,16 +21,12 @@ export const MenuDropdown: React.FC<Props> = ({ showDropDown }) => {
   return (
     <div
       className={clsx(
-        "absolute -bottom-[138px] left-0 bg-rfe-primary-container border-rfe-title-pink z-10 min-w-[200px] overflow-hidden transition-all duration-300 ease-in-out",
+        "absolute top-full left-0 bg-rfe-primary-container z-10 rounded-md min-w-[200px] overflow-hidden transition-all duration-300 ease-in-out",
         showDropDown
-          ? "border-2 py-1 opacity-100"
-          : "border-0 py-0 opacity-0 h-0",
+          ? "h-[140px] border-2 border-rfe-title-pink py-1 opacity-100 mt-2"
+          : "h-0 border-0 py-0 opacity-0 mt-0",
       )}
       data-component="MenuDropdown"
-      style={{
-        height: showDropDown ? "116px" : "0px",
-        transition: "ease",
-      }}
     >
       <nav className="flex flex-row items-center justify-center w-full">
         <ul
