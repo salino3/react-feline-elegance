@@ -4,7 +4,7 @@ import { colorx } from "./main-header.component";
 
 export const containerStyles = () =>
   clsx(`
-        flex flex-row items-center justify-between px-[16px] font-[cursive]
+      z-0  flex flex-row items-center justify-between px-[16px] font-[cursive]
        cou w-full  ${colorx} h-[85px] sm:px-[32px]
         `);
 

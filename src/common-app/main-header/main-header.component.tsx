@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { MenuIconMobile } from "../../icons";
 import { containerStyles, navStyles } from "./styles";
 import { CartItems } from "../../store/interface";
+import { MenuDropdown } from "../menu-dropdown/menu-dropdown.component";
 
 export let colorx = "bg-rfe-primary-container";
 
@@ -53,8 +54,9 @@ export const MainHeader: React.FC = () => {
             </ul>
           </nav>
         ) : (
-          <div className="bg-rfe-primary-container p-1  ">
+          <div className="bg-rfe-primary-container p-1 relative ">
             <MenuIconMobile />
+            <MenuDropdown />
           </div>
         )}
       </div>

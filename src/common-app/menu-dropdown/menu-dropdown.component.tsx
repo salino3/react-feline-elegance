@@ -5,28 +5,47 @@ import clsx from "clsx";
 export const MenuDropdown: React.FC = () => {
   const location = useLocation();
 
-  const stylesNavValue = `flex flex-row items-center justify-center w-full  hidden sm:block`;
+  const stylesNavValue = `flex flex-row items-center justify-center w-full  `;
 
-  const stylesLi = (bold: boolean = false) =>
-    clsx(
-      `${bold ? "font-semibold border-b-2 border-rfe-title-pink" : ""}   text-rfe-title-pink flex flex-row `,
-    );
+  const stylesLi = clsx(
+    ` flex items-center justify-center text-rfe-title-pink  flex-row w-full   hover:bg-rfe-inverse-primary rounded-md`,
+  );
+
+  const stylesAnchor = (bold: boolean = false) =>
+    clsx(`
+        ${bold ? "font-semibold border-b-2 border-rfe-title-pink" : ""}
+        `);
 
   return (
-    <div data-component="MenuDropdown">
+    <div
+      className="absolute -bottom-[138px] bg-rfe-primary-container py-1 border-2 rounded-md border-rfe-title-pink z-10 min-w-[200px] min-h-[110px] "
+      data-component="MenuDropdown"
+    >
       <nav className={stylesNavValue}>
-        <ul className={"flex flex-col items-center justify-between w-full"}>
-          <li className={stylesLi(location.pathname === "/")}>
-            <a href="#">Shop</a>
+        <ul
+          className={
+            "flex flex-col gap-[2px] items-center justify-between w-full"
+          }
+        >
+          <li className={stylesLi}>
+            <a className={stylesAnchor(location.pathname === "/")} href="#">
+              Shop
+            </a>
           </li>
-          <li className={stylesLi()}>
-            <a href="#">New Arrivals</a>
+          <li className={stylesLi}>
+            <a className={stylesAnchor()} href="#">
+              New Arrivals
+            </a>
           </li>
-          <li className={stylesLi()}>
-            <a href="#">Sale</a>
+          <li className={stylesLi}>
+            <a className={stylesAnchor()} href="#">
+              Sale
+            </a>
           </li>
-          <li className={stylesLi()}>
-            <a href="#">About</a>
+          <li className={stylesLi}>
+            <a className={stylesAnchor()} href="#">
+              About
+            </a>
           </li>
         </ul>
       </nav>
