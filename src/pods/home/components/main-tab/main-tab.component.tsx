@@ -4,11 +4,13 @@ export const MainTab: React.FC = () => {
   return (
     <div
       data-component="MainTab"
-      className="relative z-[2] w-[672px] h-[406px] flex flex-col justify-center p-16 
-                 rounded-[60px] bg-rfe-surface-container-lowest-opacity 
-                 backdrop-blur-sm border border-white/20 shadow-2xl"
+      className="absolute -top-[-250px] -left-[-50px]  justify-self-end self-start  flex  w-full  max-w-[1152px]  z-[2]  px-4"
     >
-      <div className="relative z-10 flex flex-col gap-6">
+      <div
+        className="     w-[572px] h-[406px]   justify-center p-16  
+                 rounded-[60px] bg-rfe-surface-container-lowest-opacity 
+                 backdrop-blur-sm border border-white/20 shadow-2xl z-[3] flex flex-col gap-3"
+      >
         <h3 className="font-[Bold-Italic] text-[12px] text-rfe-primary ">
           L'ÉDITION PRINTEMPS
         </h3>

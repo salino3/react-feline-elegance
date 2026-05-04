@@ -5,15 +5,15 @@ export const MainImage: React.FC = () => {
   return (
     <div
       data-component="MainImage"
-      className="relative z-0 flex flex-col flex-1 justify-start items-center w-full h-full   "
+      className="bg-slate-600 relative z-0 flex flex-col   justify-start items-center w-full h-fit    "
     >
       <img
         className="absolute z-[1]"
         src="/images/Gradient.png"
-        alt="Gradient mMain image"
+        alt="Gradient Main image"
       />
       <img
-        className="absolute  z-0"
+        className="w-full h-auto block  z-0"
         src="/images/main-image-feline.png"
         alt="Main image cat Maison du Chat"
       />
