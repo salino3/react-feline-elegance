@@ -1,16 +1,15 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import clsx from "clsx";
 import { MenuIconMobile } from "../../icons";
 import { containerStyles, navStyles } from "./styles";
-
-interface CartItems {
-  name: string;
-}
+import { CartItems } from "../../store/interface";
 
 export let colorx = "bg-rfe-primary-container";
 
 export const MainHeader: React.FC = () => {
+  const location = useLocation();
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1024px)",
   });
@@ -39,7 +38,7 @@ export const MainHeader: React.FC = () => {
         {isDesktopOrLaptop ? (
           <nav className={navStyles(stylesNavValue)}>
             <ul className={stylesUlValue}>
-              <li className={stylesLi(true)}>
+              <li className={stylesLi(location.pathname === "/")}>
                 <a href="#">Shop</a>
               </li>
               <li className={stylesLi()}>
