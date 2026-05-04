@@ -1,7 +1,12 @@
 import React from "react";
-import { MainTab } from "../main-tab";
+import { useMediaQuery } from "react-responsive";
+import { MainMessage, MainTab } from "..";
 
 export const MainImage: React.FC = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1024px)",
+  });
+
   return (
     <div
       data-component="MainImage"
@@ -17,7 +22,7 @@ export const MainImage: React.FC = () => {
         src="/images/main-image-feline.png"
         alt="Main image cat Maison du Chat"
       />
-      <MainTab />
+      {isDesktopOrLaptop ? <MainTab /> : <MainMessage />}
     </div>
   );
 };
