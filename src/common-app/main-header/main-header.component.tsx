@@ -73,7 +73,7 @@ export const MainHeader: React.FC = () => {
           <img
             src="/icons/little-user.svg"
             alt="User icon"
-            className="w-4 h-4"
+            className="w-4 h-4 min-w-4 min-h-4"
           />
         </div>
         <div className="flex relative justify-center items-center  ">
@@ -85,7 +85,7 @@ export const MainHeader: React.FC = () => {
           <img
             src="/icons/little-empty-cart.svg"
             alt="Cart icon"
-            className="w-4 h-4"
+            className="w-4 h-4 min-w-4 min-h-4"
           />
         </div>
       </div>
