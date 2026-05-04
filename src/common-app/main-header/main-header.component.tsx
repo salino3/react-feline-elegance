@@ -15,6 +15,8 @@ export const MainHeader: React.FC = () => {
     query: "(min-width: 1024px)",
   });
 
+  const [showDropDown, setShowDropDown] = useState<boolean>(false);
+
   const [cartItems, setCartItems] = useState<CartItems[]>([
     { name: "hat" },
     { name: "shirt" },
@@ -55,8 +57,8 @@ export const MainHeader: React.FC = () => {
           </nav>
         ) : (
           <div className="bg-rfe-primary-container p-1 relative ">
-            <MenuIconMobile />
-            <MenuDropdown />
+            <MenuIconMobile click={() => setShowDropDown(!showDropDown)} />
+            <MenuDropdown showDropDown={showDropDown} />
           </div>
         )}
       </div>

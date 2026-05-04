@@ -2,7 +2,11 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import clsx from "clsx";
 
-export const MenuDropdown: React.FC = () => {
+interface Props {
+  showDropDown: boolean;
+}
+
+export const MenuDropdown: React.FC<Props> = ({ showDropDown }) => {
   const location = useLocation();
 
   const stylesNavValue = `flex flex-row items-center justify-center w-full  `;
@@ -18,8 +22,12 @@ export const MenuDropdown: React.FC = () => {
 
   return (
     <div
-      className="absolute -bottom-[138px] bg-rfe-primary-container py-1 border-2 rounded-md border-rfe-title-pink z-10 min-w-[200px] min-h-[110px] "
+      className="absolute -bottom-[138px] bg-rfe-primary-container py-1 border-2 rounded-md border-rfe-title-pink z-10 min-w-[200px]   "
       data-component="MenuDropdown"
+      style={{
+        height: showDropDown ? "0px" : "116px",
+        transition: "ease",
+      }}
     >
       <nav className={stylesNavValue}>
         <ul

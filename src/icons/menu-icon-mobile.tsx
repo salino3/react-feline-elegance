@@ -1,5 +1,12 @@
-export const MenuIconMobile = () => (
-  <div className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-transparent hover:border-cyan-700 hover:bg-slate-300 cursor-pointer transition-all">
+interface Props {
+  click?: React.MouseEventHandler<HTMLDivElement> | undefined;
+}
+
+export const MenuIconMobile: React.FC<Props> = ({ click }) => (
+  <div
+    onClick={click}
+    className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-transparent hover:border-cyan-700 hover:bg-slate-300 cursor-pointer transition-all"
+  >
     <svg
       width="18"
       height="12"
