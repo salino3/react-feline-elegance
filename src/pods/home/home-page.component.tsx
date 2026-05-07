@@ -1,5 +1,5 @@
 import React from "react";
-import { MainImage } from "./components";
+import { ContentHome, MainImage } from "./components";
 
 export const HomePage: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ export const HomePage: React.FC = () => {
       className="flex flex-col flex-1 justify-start items-center w-full h-full   "
     >
       <MainImage />
+      <ContentHome />
     </div>
   );
 };
