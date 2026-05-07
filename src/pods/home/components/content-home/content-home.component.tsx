@@ -1,5 +1,6 @@
 import React from "react";
 import { BoxCardBase } from "../../../../common-app/box-card-base/box-card-base.component";
+import clsx from "clsx";
 
 interface PropsGridImages {
   img: string;
@@ -31,10 +32,14 @@ const boxCardBaseData: PropsGridImages[] = [
 ];
 
 export const ContentHome: React.FC = () => {
+  const boxStyles = clsx(`
+        
+        `);
+
   return (
     <div
       data-component="ContentHome"
-      className="flex flex-col justify-center items-center px-12  py-[80px] w-full text-rfe-on-surface"
+      className="flex flex-col justify-start items-center px-12  py-[80px] w-full text-rfe-on-surface"
     >
       <div className="flex flex-col pb-3  w-full max-w-[1152px]">
         <h2 className="font-[Noto-Serif] inline-[32px]  text-[32px] font-semibold  ">
@@ -45,12 +50,15 @@ export const ContentHome: React.FC = () => {
         </p>
       </div>
 
-      <div className="flex flex-row gap-4 items-center justify-center border-2 w-full max-w-[1152px]">
-        <div className="overflow-hidden flex items-center justify-center rounded-rfe-radius-base">
+      <div
+        data-item="boxImages"
+        className="flex flex-row gap-4 items-start justify-center border-2 w-full max-w-[1152px]"
+      >
+        <div className="overflow-hidden flex-1 flex items-center justify-center rounded-rfe-radius-base">
           <img src="/public/images/content-home/big_01.png" alt="Cat Image" />
         </div>
         {/*  */}
-        <div className="overflow-hidden flex flex-col items-center justify-center rounded-rfe-radius-base">
+        <div className="overflow-hidden flex-1 flex flex-wrap items-center justify-center rounded-rfe-radius-base">
           {boxCardBaseData.map((data: PropsGridImages) => (
             <BoxCardBase
               alt="Cat image"
