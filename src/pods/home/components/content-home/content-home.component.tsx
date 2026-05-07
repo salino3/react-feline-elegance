@@ -1,4 +1,5 @@
 import React from "react";
+import { BoxCardBase } from "../../../../common-app/box-card-base/box-card-base.component";
 
 export const ContentHome: React.FC = () => {
   return (
@@ -13,6 +14,17 @@ export const ContentHome: React.FC = () => {
         <p className="font-[Be Vietnam Pro] text-[16px]">
           Freshly tailored essentials for your companion.
         </p>
+      </div>
+
+      <div className="flex flex-row gap-4 items-center justify-center border-2 w-full max-w-[1152px]">
+        <div className="overflow-hidden flex items-center justify-center rounded-rfe-radius-base">
+          <img src="/public/images/content-home/big_01.png" alt="Cat Image" />
+        </div>
+        {/*  */}
+        <div className="overflow-hidden flex flex-col items-center justify-center rounded-rfe-radius-base">
+          <img src="/public/images/content-home/small_02.png" alt="Cat Image" />
+          <BoxCardBase alt="Cat image" img="/images/content-home/small_03." />
+        </div>
       </div>
     </div>
   );
