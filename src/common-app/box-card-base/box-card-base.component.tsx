@@ -7,15 +7,26 @@ interface Props {
   defaultImg?: boolean;
   titleImage: string;
   price: number;
+  customStyle?: string;
 }
 
 export const BoxCardBase: React.FC<Props> = (props) => {
-  const { img, alt, defaultImg = true, titleImage, price } = props;
+  const {
+    img,
+    alt,
+    defaultImg = true,
+    titleImage,
+    price,
+    customStyle = "",
+  } = props;
 
   const { handleImgError } = useAppFunction();
 
   return (
-    <div data-component="BoxCardBase" className="flex flex-col gap-1 p-1">
+    <div
+      data-component="BoxCardBase"
+      className={"flex flex-col gap-1 p-1 " + customStyle}
+    >
       <div className="flex items-center justify-center overflow-hidden object-contain rounded-rfe-radius-base">
         <img
           onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) =>

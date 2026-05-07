@@ -31,11 +31,11 @@ const boxCardBaseData: PropsGridImages[] = [
   },
 ];
 
-export const ContentHome: React.FC = () => {
-  const boxStyles = clsx(`
-        
-        `);
+const boxStyles: string = clsx(`
+      flex-[50%]
+      `);
 
+export const ContentHome: React.FC = () => {
   return (
     <div
       data-component="ContentHome"
@@ -52,7 +52,7 @@ export const ContentHome: React.FC = () => {
 
       <div
         data-item="boxImages"
-        className="flex flex-row gap-4 items-start justify-center border-2 w-full max-w-[1152px]"
+        className="flex flex-row gap-4 items-start justify-center  w-full max-w-[1152px]"
       >
         <div className="overflow-hidden flex-1 flex items-center justify-center rounded-rfe-radius-base">
           <img src="/public/images/content-home/big_01.png" alt="Cat Image" />
@@ -65,6 +65,7 @@ export const ContentHome: React.FC = () => {
               img={data.img}
               price={data.price}
               titleImage={data.title}
+              customStyle={boxStyles}
             />
           ))}
         </div>
