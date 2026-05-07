@@ -1,6 +1,35 @@
 import React from "react";
 import { BoxCardBase } from "../../../../common-app/box-card-base/box-card-base.component";
 
+interface PropsGridImages {
+  img: string;
+  price: number;
+  title: string;
+}
+
+const boxCardBaseData: PropsGridImages[] = [
+  {
+    img: "/images/content-home/small_02.png",
+    price: 145.0,
+    title: "The Pearl Color",
+  },
+  {
+    img: "/images/content-home/small_03.png",
+    price: 220.0,
+    title: "Velver Morning Robe",
+  },
+  {
+    img: "/images/content-home/small_04.png",
+    price: 65.0,
+    title: "Silk Ribbon Bow",
+  },
+  {
+    img: "/images/content-home/small_05.png",
+    price: 88.0,
+    title: "The Artist's Beret",
+  },
+];
+
 export const ContentHome: React.FC = () => {
   return (
     <div
@@ -22,22 +51,14 @@ export const ContentHome: React.FC = () => {
         </div>
         {/*  */}
         <div className="overflow-hidden flex flex-col items-center justify-center rounded-rfe-radius-base">
-          <BoxCardBase
-            alt="Cat image"
-            img="/images/content-home/small_02.png"
-          />
-          <BoxCardBase
-            alt="Cat image"
-            img="/images/content-home/small_03.png"
-          />
-          <BoxCardBase
-            alt="Cat image"
-            img="/images/content-home/small_04.png"
-          />
-          <BoxCardBase
-            alt="Cat image"
-            img="/images/content-home/small_05.png"
-          />
+          {boxCardBaseData.map((data: PropsGridImages) => (
+            <BoxCardBase
+              alt="Cat image"
+              img={data.img}
+              price={data.price}
+              titleImage={data.title}
+            />
+          ))}
         </div>
       </div>
     </div>
