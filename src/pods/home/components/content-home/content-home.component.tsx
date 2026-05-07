@@ -22,8 +22,22 @@ export const ContentHome: React.FC = () => {
         </div>
         {/*  */}
         <div className="overflow-hidden flex flex-col items-center justify-center rounded-rfe-radius-base">
-          <img src="/public/images/content-home/small_02.png" alt="Cat Image" />
-          <BoxCardBase alt="Cat image" img="/images/content-home/small_03." />
+          <BoxCardBase
+            alt="Cat image"
+            img="/images/content-home/small_02.png"
+          />
+          <BoxCardBase
+            alt="Cat image"
+            img="/images/content-home/small_03.png"
+          />
+          <BoxCardBase
+            alt="Cat image"
+            img="/images/content-home/small_04.png"
+          />
+          <BoxCardBase
+            alt="Cat image"
+            img="/images/content-home/small_05.png"
+          />
         </div>
       </div>
     </div>
